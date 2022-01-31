@@ -31,24 +31,22 @@ ul {
   list-style: none;
 }
 
+/* -------------Navigation-------- */
+
 .docx-nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin: 0 auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* border: 2px solid blue; */
   max-width: 90%;
-  margin: 0 auto;
-  /* background-color: var(--highlight-color); */
   border-bottom: 1px solid var(--highlight-color);
 }
 .brand-name {
-  /* border: 2px solid gold; */
   display: inline-block;
 }
 .brand-logo {
-  /* border: 2px solid gold; */
   font-size: 1.8rem;
   color: #9681a0;
 }
@@ -57,7 +55,6 @@ ul {
   color: rgb(90, 90, 90);
 }
 .nav-icons {
-  /* border: 1px solid red; */
   font-size: 1.3rem;
 }
 .icon {
@@ -67,47 +64,56 @@ ul {
 
 /* main  */
 .docx-layout {
-  /* border: 2px solid palegreen; */
   display: flex;
 }
-/* sidebar */
+
+/* ---------------sidebar------------------ */
+
 .docx-sidebar {
-  /* border: 2px solid red; */
   padding: 2rem 4rem;
-}
-.nested-list1 {
-  /* border: 2px solid blue; */
-}
-.nested-list2 {
-  /* border: 2px solid red; */
-}
-.list-topic {
-  /* border: 1px solid green; */
+  padding-left: 4.5rem;
 }
 
-/* main */
+.list-topic {
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(209, 206, 206);
+}
+.list-subtopic li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.list-subtopic li i {
+  color: var(--highlight-color);
+  font-size: 0.8rem;
+}
+.list-subtopic li a {
+  color: var(--secondary-color);
+}
+
+/*-------------------- main components documentation--------------------- */
 
 .docx-components {
-  /* border: 2px solid blueviolet; */
   padding: 1rem;
   padding-left: 2rem;
 }
 .section {
-  padding: 1rem 6rem 5rem 3rem;
-  margin-right: 4rem;
-  margin-top: 2rem;
-  border-radius: 10px;
-  /* border: 2px solid red; */
-  box-shadow: 0px 0px 4px 0px var(--highlight-color);
   position: relative;
+  padding: 1rem 6rem 5rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-right: 4rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px var(--highlight-color);
 }
 .component-title {
-  font-size: 2.2rem;
-
-  margin-bottom: 1rem;
-
   position: absolute;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
   background-color: white;
+
   top: -3%;
   left: 5%;
   z-index: 0;
@@ -118,11 +124,48 @@ ul {
   margin-bottom: 1rem;
 }
 .component-detail {
-  /* border: 2px solid red; */
-  margin-bottom: 2rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 hr {
-  margin-bottom: 2rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*-----------------------color pallet--------------------------- */
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.palette > div {
+  width: 120px;
+  height: 120px;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.default {
+  background-color: #f3f3f5;
+  color: black !important;
+}
+.primary {
+  background-color: #6366f1;
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.error {
+  background-color: #f44336;
+}
+.success {
+  background-color: #4caf50;
+}
+.warning {
+  background-color: #ff9800;
 }
