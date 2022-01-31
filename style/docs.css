@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@500&family=Chivo:wght@900&family=Dongle&family=Inter&family=Lato:wght@700&family=Montserrat:wght@100;500&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Oswald:wght@300&family=Poppins&family=Prompt:wght@200&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Source+Sans+Pro&family=Spline+Sans:wght@500&display=swap");
+
+:root {
+  --primary-color: #fff;
+  /* --highlight-color: #94849b; */
+  --highlight-color: #a493ac;
+  /* --highlight-color: #4fd1c5; */
+  --secondary-color: #747572;
+
+  --background-color: #1a202c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  /* font-family: "Roboto", sans-serif; */
+
+  font-family: "Open Sans", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+.docx-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* border: 2px solid blue; */
+  max-width: 90%;
+  margin: 0 auto;
+  /* background-color: var(--highlight-color); */
+  border-bottom: 1px solid var(--highlight-color);
+}
+.brand-name {
+  /* border: 2px solid gold; */
+  display: inline-block;
+}
+.brand-logo {
+  /* border: 2px solid gold; */
+  font-size: 1.8rem;
+  color: #9681a0;
+}
+.version-sm {
+  font-size: 0.8rem;
+  color: rgb(90, 90, 90);
+}
+.nav-icons {
+  /* border: 1px solid red; */
+  font-size: 1.3rem;
+}
+.icon {
+  padding: 0rem 0.5rem;
+  color: var(--secondary-color);
+}
+
+/* main  */
+.docx-layout {
+  /* border: 2px solid palegreen; */
+  display: flex;
+}
+/* sidebar */
+.docx-sidebar {
+  /* border: 2px solid red; */
+  padding: 2rem 4rem;
+}
+.nested-list1 {
+  /* border: 2px solid blue; */
+}
+.nested-list2 {
+  /* border: 2px solid red; */
+}
+.list-topic {
+  /* border: 1px solid green; */
+}
+
+/* main */
+
+.docx-components {
+  /* border: 2px solid blueviolet; */
+  padding: 1rem;
+  padding-left: 2rem;
+}
+.section {
+  padding: 1rem 6rem 5rem 3rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+  box-shadow: 0px 0px 4px 0px var(--highlight-color);
+  position: relative;
+}
+.component-title {
+  font-size: 2.2rem;
+
+  margin-bottom: 1rem;
+
+  position: absolute;
+  background-color: white;
+  top: -3%;
+  left: 5%;
+  z-index: 0;
+}
+
+.component-subhead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.component-detail {
+  /* border: 2px solid red; */
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+hr {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
