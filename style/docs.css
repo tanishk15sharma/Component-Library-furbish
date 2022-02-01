@@ -83,9 +83,9 @@ ul {
 
   /* --sidebar scroll and fixed-- */
   position: sticky;
-  height: calc(100vh - 4.125rem);
+  height: calc(100vh - 3.125rem);
   overflow-y: auto;
-  top: 4.2rem;
+  top: 3.2rem;
 }
 
 .list-topic {
