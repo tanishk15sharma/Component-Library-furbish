@@ -38,10 +38,16 @@ ul {
   justify-content: space-between;
   align-items: baseline;
   margin: 0 auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   max-width: 90%;
   border-bottom: 1px solid var(--highlight-color);
+
+  /*for fixed nav  */
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 .brand-name {
   display: inline-block;
@@ -65,13 +71,21 @@ ul {
 /* main  */
 .docx-layout {
   display: flex;
+  gap: 2rem;
 }
 
 /* ---------------sidebar------------------ */
 
 .docx-sidebar {
-  padding: 2rem 4rem;
+  padding: 2rem 1rem;
   padding-left: 4.5rem;
+  width: 40%;
+
+  /* --sidebar scroll and fixed-- */
+  position: sticky;
+  height: calc(100vh - 4.125rem);
+  overflow-y: auto;
+  top: 4.2rem;
 }
 
 .list-topic {
