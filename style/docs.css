@@ -175,9 +175,7 @@ hr {
 .primary {
   background-color: #6366f1;
 }
-.secondary-cl {
-  background-color: var(--secondary-color);
-}
+
 .error {
   background-color: #f44336;
 }
