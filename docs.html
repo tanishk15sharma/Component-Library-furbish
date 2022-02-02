@@ -16,6 +16,7 @@
 
     <!-- components css file -->
     <link rel="stylesheet" href="./style/components/joinComponent.css">
+    <script src="./scripts/componentScript.js" defer></script>
     <title>Documentation</title>
   </head>
   <body>
@@ -87,6 +88,10 @@
               <a href="#Img">Image</a>
             </li>
             <li>
+              <i class="fas fa-text-width"></i>
+              <a href="#chips">chips</a>
+            </li>
+            <li>
               <i class="fas fa-sticky-note"></i>
               <a href="#snackbar">SnackBar</a>
             </li>
@@ -101,10 +106,6 @@
             <li>
               <i class="fas fa-comment-alt"></i>
               <a href="#modal">modal</a>
-            </li>
-            <li>
-              <i class="fas fa-text-width"></i>
-              <a href="#chips">chips</a>
             </li>
             <li>
               <i class="fas fa-font"></i>
@@ -578,6 +579,46 @@
 </code>
 
 </section>
+
+
+<section class="section" >
+  <div class="component-title" >Input </div>
+  <div class="component-detail" >
+    Inputs are necessary for user interaction with the website. Inputs are used to take information from the user, and then save the data to the server, accordingly.
+
+  </div>
+<div class="component-subhead" >Basic Input</div>
+<input type="text" class="basic-input" placeholder="Name"  >
+
+
+<div class="component-subhead" >Input W/ Chips</div>
+<div class="chips-container">
+  <div class="chips">
+    <div class="chip">
+      <p>tanishk</p>
+      <i class="fas fa-times-circle input-cross-icon"></i>
+    </div>
+    <div class="chip-bg">
+      <p >Primary</p>
+      <i class="fas fa-times-circle input-cross-icon"></i>
+    </div>
+    <div class="chip-border">
+      <p >Secondary</p>
+      <i class="fas fa-times-circle input-cross-icon"></i>
+    </div>
+  </div>
+  <input type="text" class="input-chip" placeholder="add items..." />
+</div>
+
+<code>
+  <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=auto&width=655&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FBasic%2520Input%250A%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522basic-input%2522%2520placeholder%253D%2522Name%2522%2520%2520%253E%250A%252F%252FInput%2520with%2520chips%250A%253Cdiv%2520class%253D%2522chips-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522chips%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522chip%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253Etanishk%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520input-cross-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522chip-bg%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520%253EPrimary%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520input-cross-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522chip-border%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520%253ESecondary%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520input-cross-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-chip%2522%2520placeholder%253D%2522add%2520items...%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A*Use%2520script.JS%2520link%2520embedded%2520in%2520installation%252C%250A%2520to%2520make%2520sure%2520input%2520chips%2520work%2520%2520"
+  style="width: 100%; height: 350px; border:0; transform: scale(1); overflow:hidden;margin-top: 5px;margin-bottom: 50px""
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+</code>
+</section>
+
 
     </main>
   </body>
