@@ -1,0 +1,98 @@
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.mg-rl {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.card-container {
+  width: 20rem;
+  height: 50%;
+  box-shadow: 0px 1px 5px 0px #888888;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+}
+.random-img {
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-title {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+.text-over-heading {
+  position: absolute;
+  top: 45%;
+}
+.flex-items {
+  display: flex;
+  gap: 0.4rem;
+}
+.card-subtitle {
+  margin-bottom: 0;
+  color: rgb(114, 113, 113);
+  font-weight: 500;
+}
+
+.card-text {
+  color: rgb(168, 167, 167);
+  font-size: 0.9rem;
+}
+
+.card-btn {
+  color: #075985;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 3px;
+  margin-left: 0;
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card-details {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.card-options {
+  margin: 1rem 1rem 0.5rem 0.5rem;
+}
+
+.card-icon {
+  color: #6c7581;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.fa-heart {
+  margin-left: 2rem;
+}
+
+.fa-ellipsis-v {
+  padding: 8px 12px;
+}
+
+.card-details:hover {
+  background-color: #f8fafc;
+}
+
+.card-btn:hover {
+  background-color: #f1f5f9;
+}
+.fa-share-alt:hover {
+  border-radius: 50%;
+  background-color: #f1f5f9;
+}
+.fa-heart:hover {
+  border-radius: 50%;
+  background-color: #f1f5f9;
+}
+.fa-ellipsis-v:hover {
+  border-radius: 50px;
+  background-color: #f1f5f9;
+}
