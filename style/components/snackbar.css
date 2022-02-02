@@ -34,7 +34,3 @@
 #snackbar-center.showCenter {
   transform: translateY(0);
 }
-
-.btn:hover {
-  background-color: #78716c;
-}

@@ -51,6 +51,10 @@
               <a href="/Get Started/introduction.html"> Introduction </a>
             </li>
             <li>
+              <i class="fas fa-font"></i>
+              <a href="#Typography">Typography</a>
+            </li>
+            <li>
               <i class="fas fa-palette"></i>
               <a href="/Get Started/Color.html"> Colors </a>
             </li>
@@ -106,14 +110,6 @@
             <li>
               <i class="fas fa-comment-alt"></i>
               <a href="#modal">modal</a>
-            </li>
-            <li>
-              <i class="fas fa-font"></i>
-              <a href="#Typography">Typography</a>
-            </li>
-            <li>
-              <i class="fas fa-minus-square"></i>
-              <a href="#header">header</a>
             </li>
             <li>
               <i class="fab fa-elementor"></i>
@@ -195,7 +191,7 @@
         <section class="section" >
           <div class="component-title fix" >AVATAR</div>
           <div class="component-detail" >
-            Avatars are user profile pictures, usually found in circular shapes. Avatars can be used for 'container' objects — projects, spaces, repositories, etcetera — to give them a recognisable visual identity.
+            Avatars are user    <span  class="highlight-text" >   profile pictures </span>, usually found in circular shapes. Avatars can be used for 'container' objects — projects, spaces, repositories, etcetera — to give them a recognisable visual identity.
           </div>
 
 
@@ -630,17 +626,19 @@
 <section  class="section" >
   <div class="component-title" >Snackbar </div>
   <div class="component-detail" >
-    Snackbars/Toast inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.
+     <span  class="highlight-text" >
+      Snackbars/Toast
+    </span>   inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.
   </div>
 
   <div id="snackbar"></div>
   <div id="snackbar-center"></div>
   
-  <button class="btn" onclick="showMessage('Thank you for Registration !')">
+  <button class="btn btn-secondary" onclick="showMessage('Thank you for Registration !')">
     Basic Snackbar
   </button>
   <button
-    class="btn"
+    class="btn btn-secondary"
     onclick='showMessageCenter("Cant send photos. Retry in 5 seconds")'>Center Snackbar</button>
 
   
@@ -653,7 +651,7 @@
 </code>
 </section>
 
-<!-- Drawer component -->
+<!------ Drawer component ------>
 
 
 <section class="section" >
@@ -728,7 +726,7 @@
 </section>
 
 
-
+<!-----Navigation component ----->
 <section class="section" >
   <div class="component-title" >Navigation Bar</div>
   <div class="component-detail" >
@@ -762,11 +760,72 @@ With CSS you can transform boring HTML menus into good-looking navigation bars.
 </code>
 </section>
 
+<!-- Modal-popup -->
+
+<section class="section" >
+  <div class="component-title" >Modal</div>
+  <div class="component-detail" >
+    A modal is a dialog  <span class="highlight-text" >box/popup</span> window that is displayed on top of the current page:
+  </div>
+  
+  <button id="openModal" class="btn btn-primary">CLICK ME</button>
+  
+  <div class="modal-container" id="modal_container">
+    <div class="modal">
+      <h1>Modals/popups are Awesome!</h1>
+      <p class="modal-text" >
+        This is a modal box which is used in popping various important
+        informations depending on user requirement.
+      </p>
+      <button id="closeModal" class="btn btn-primary">OKAY</button>
+      <button id="closeModal" class="btn btn-danger">CANCLE</button>
+    </div>
+  </div>
+  
+<code>
+  <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=588&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cbutton%2520id%253D%2522openModal%2522%2520class%253D%2522btn%2520btn-primary%2522%253ECLICK%2520ME%253C%252Fbutton%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-container%2522%2520id%253D%2522modal_container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%253EModals%252Fpopups%2520are%2520Awesome%21%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522modal-text%2522%2520%253EThis%2520is%2520a%2520modal%2520box%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522closeModal%2522%2520class%253D%2522btn%2520btn-primary%2522%253EOKAY%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522closeModal%2522%2520class%253D%2522btn%2520btn-danger%2522%253ECancle%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%250A%252F%252F%2520embed%2520script.js%2520link%2520for%2520proper%2520functioning%2520"
+  style="width: 100%; height: 335px; border:0; transform: scale(1); overflow:hidden;margin-top: 5px;margin-bottom: 50px"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+</code>
+</section>
+
+<!-- Dialog component -->
+
+<section class="section" >
+
+<div class="component-title" >Rating</div>
+
+<div class="component-detail" >
+
+</div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
 
 
     </main>
