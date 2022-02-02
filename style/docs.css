@@ -145,6 +145,10 @@ ul {
   margin-bottom: 2rem;
 }
 
+.highlight-text {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -184,4 +188,9 @@ hr {
 }
 .warning {
   background-color: #ff9800;
+}
+
+.img-example {
+  width: 10rem;
+  height: 20vh;
 }

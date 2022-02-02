@@ -49,3 +49,14 @@ function showMessageTop(msg) {
     snackBarCenter.classList.remove("showCenter");
   }, 3000);
 }
+
+// --Responsive Navigation Bar--//
+const toggleButton = document.querySelector(".toggle-button");
+const navbarLinks = document.querySelector(".navbar-links");
+
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+});
+
+console.log(toggleButton);
+console.log(navbarLinks);
