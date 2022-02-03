@@ -18,15 +18,15 @@ function inputHandler(e) {
 
 // --SnakckBar script -- //
 
-var snackBar = document.getElementById("snackbar");
+var snackBarTop = document.getElementById("snackbar-top");
 var snackBarCenter = document.getElementById("snackbar-center");
 
 function showMessage(msg) {
-  snackBar.innerHTML = msg;
-  snackBar.classList.add("show");
+  snackBarTop.innerHTML = msg;
+  snackBarTop.classList.add("show");
 
   setTimeout(function () {
-    snackBar.classList.remove("show");
+    snackBarTop.classList.remove("show");
   }, 3000);
 }
 

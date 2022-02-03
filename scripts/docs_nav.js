@@ -5,3 +5,13 @@ console.log(toggleSlideBtn);
 toggleSlideBtn.addEventListener("click", () => {
   sideBar.classList.toggle("show");
 });
+// code for automatically closing the sideBar; for selecting whole screen use document only
+document.addEventListener(
+  "click",
+  () => {
+    if (sideBar.classList.contains("show")) {
+      sideBar.classList.remove("show");
+    }
+  },
+  true
+);

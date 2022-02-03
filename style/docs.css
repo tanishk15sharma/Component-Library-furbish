@@ -30,6 +30,9 @@ ol,
 ul {
   list-style: none;
 }
+a {
+  color: black;
+}
 /* -------------Navigation-------- */
 
 .docx-nav {
@@ -41,7 +44,8 @@ ul {
   padding-bottom: 0.5rem;
   max-width: 90%;
   border-bottom: 1px solid var(--highlight-color);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+  /* background-color: white; */
 
   /*for fixed nav  */
 
@@ -54,7 +58,8 @@ ul {
 }
 .brand-logo {
   font-size: 1.8rem;
-  color: #9681a0;
+  color: #a493ac;
+  /* color: #9681a0; */
 }
 .version-sm {
   font-size: 0.8rem;
@@ -100,7 +105,7 @@ ul {
   height: calc(100vh - 3.125rem);
   overflow-y: auto;
   top: 3.2rem;
-  transition: all 0.6s;
+  transition: all 0.9s;
 }
 
 .list-topic {
@@ -150,11 +155,21 @@ ul {
   left: 5%;
   z-index: 0;
 }
+/* component title positioning fix */
 .fix {
   top: -2.5%;
 }
+.fix_down {
+  top: -1%;
+}
+.fix_up {
+  top: -5%;
+}
+.fix_cn {
+  top: -4%;
+}
 
-.component-subhead {
+.compone-nt-subhead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -265,11 +280,39 @@ hr {
   .menu-logo {
     margin-left: 34px;
   }
+  .docx-components {
+    margin-left: 2.3rem;
+  }
 }
 /* Smallest size */
-@media (max-width: 390px) {
+@media (max-width: 470px) {
+  .docx-nav {
+    margin-left: 3rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 412px) {
   .docx-sidebar {
     width: 55%;
     height: 100%;
+  }
+  .section {
+    margin-right: 2rem;
+  }
+  .docx-nav {
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 380px) {
+  .docx-nav {
+    margin: 0;
+    margin-left: 4rem;
+    border: none;
+  }
+  .icon {
+    display: none;
+  }
+  .version-sm {
+    display: none;
   }
 }

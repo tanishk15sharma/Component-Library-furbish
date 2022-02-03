@@ -1,4 +1,4 @@
-#snackbar {
+#snackbar-top {
   background: rgb(54, 54, 54);
   color: white;
   padding: 15px;
@@ -27,7 +27,7 @@
   border-radius: 5px;
   z-index: 9999;
 }
-#snackbar.show {
+#snackbar-top.show {
   transform: translateY(0);
 }
 
