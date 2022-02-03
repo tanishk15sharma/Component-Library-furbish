@@ -50,7 +50,7 @@ function showMessageTop(msg) {
   }, 3000);
 }
 
-// --Responsive Navigation Bar--//
+// --Responsive Navigation Script --//
 const toggleButton = document.querySelector(".toggle-button");
 const navbarLinks = document.querySelector(".navbar-links");
 
@@ -60,3 +60,16 @@ toggleButton.addEventListener("click", () => {
 
 console.log(toggleButton);
 console.log(navbarLinks);
+
+// --Modal-popup script-- //
+const openBtn = document.querySelector("#openModal");
+const closeBtn = document.querySelector("#closeModal");
+const modalContainer = document.querySelector("#modal_container");
+
+openBtn.addEventListener("click", () => {
+  modalContainer.classList.add("showModal");
+});
+
+closeBtn.addEventListener("click", () => {
+  modalContainer.classList.remove("showModal");
+});
