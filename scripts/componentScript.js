@@ -16,8 +16,6 @@ function inputHandler(e) {
   }
 }
 
-console.log("got the script");
-
 // --SnakckBar script -- //
 
 var snackBar = document.getElementById("snackbar");

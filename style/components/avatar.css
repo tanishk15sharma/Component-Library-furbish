@@ -13,6 +13,10 @@
   width: 50px;
   height: 50px;
 }
+.sm-icon {
+  width: 60px;
+  height: 30px;
+}
 
 .lg {
   width: 110px;

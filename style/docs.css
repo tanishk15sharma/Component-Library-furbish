@@ -30,7 +30,6 @@ ol,
 ul {
   list-style: none;
 }
-
 /* -------------Navigation-------- */
 
 .docx-nav {
@@ -42,9 +41,9 @@ ul {
   padding-bottom: 0.5rem;
   max-width: 90%;
   border-bottom: 1px solid var(--highlight-color);
-
+  backdrop-filter: blur(5px);
   /*for fixed nav  */
-  background-color: white;
+
   position: sticky;
   top: 0;
   z-index: 3;
@@ -71,7 +70,7 @@ ul {
 /* main  */
 .docx-layout {
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 /* ---------------sidebar------------------ */
@@ -107,6 +106,9 @@ ul {
   color: var(--secondary-color);
 }
 
+.fa-bell {
+  margin-left: 0 !important;
+}
 /*-------------------- main components documentation--------------------- */
 
 .docx-components {
@@ -178,6 +180,9 @@ hr {
 }
 .primary {
   background-color: #6366f1;
+}
+.secondary {
+  background-color: #929394;
 }
 
 .error {
