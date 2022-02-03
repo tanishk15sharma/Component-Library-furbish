@@ -16,8 +16,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/style/docs.css" />
+    <script src="./scripts/docs_nav.js" defer></script>
 
-    <!-- components css file -->
+    <!-- components css && script file -->
     <link rel="stylesheet" href="./style/components/joinComponent.css" />
     <script src="./scripts/componentScript.js" defer></script>
     <title>Documentation</title>
@@ -26,6 +27,7 @@
     <nav class="docx-nav">
       <div class="brand-div">
         <i class="fab fa-pied-piper brand-logo"></i>
+        <i class="fas fa-bars menu-logo"></i>
         <h1 class="brand-name">furbish</h1>
         <span class="version-sm">v1.0</span>
       </div>
@@ -45,6 +47,7 @@
       </div>
     </nav>
     <main class="docx-layout">
+      <!-----Side Bar ----->
       <div class="docx-sidebar">
         <div class="nested-list1">
           <h2 class="list-topic">Get Started</h2>
@@ -61,10 +64,6 @@
               <i class="fas fa-palette"></i>
               <a href="/Get Started/Color.html"> Colors </a>
             </li>
-            <!-- <li>
-              <i class="far fa-play-circle"></i>
-              <a href="/Get Started/Conclusion.html"> Conclusion </a>
-            </li> -->
           </ul>
         </div>
         <div class="nested-list2">
@@ -138,7 +137,7 @@
             below and paste it in the &lt;head&gt; tag of your html, above all
             other style sheets.
           </div>
-          <code>
+          <!-- <code>
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522%252Fstyle%252Fdocs.css%2522%2520%252F%253E%250A"
               style="
@@ -151,7 +150,7 @@
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
-          </code>
+          </code> -->
 
           <hr />
 
@@ -162,6 +161,8 @@
             can be accessed by pre-defined classes.
           </div>
           <div class="component-subhead">Default Palette</div>
+
+          <!-----Color palette ----->
 
           <div class="palette">
             <div class="default">
@@ -218,7 +219,7 @@
             class="avatar"
           />
 
-          <code>
+          <!-- <code>
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252FavatarImage%252Fimages.png%2522%2520alt%253D%2522default%2522%2520class%253D%2522avatar%2520%2522%2520%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252FavatarImage%252Fofficeman.jpg%2522%2520alt%253D%2522work-men%2522%2520class%253D%2522avatar%2520%2522%2520%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522.%252Fassets%252Fimages%252FavatarImage%252Fofficewomen.png%2522%2520alt%253D%2522work-women%2522%2520class%253D%2522avatar%2520%2522%2520%252F%253E"
               style="
@@ -233,7 +234,7 @@
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>
-          </code>
+          </code> -->
 
           <div class="component-subhead">Avatar Round</div>
 
@@ -307,7 +308,7 @@
         </section>
 
         <!-----Alert component ----->
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Alert</div>
           <div class="component-detail">
             An alert displays a short, important message in a way that attracts
@@ -375,11 +376,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!----Button component---->
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Button</div>
           <div class="component-detail">
             Buttons are the soul of an interactive Web Application. Buttons
@@ -434,10 +435,10 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!----badges component----->
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">badge</div>
           <div class="component-detail">
             Badges are small circles, positioned either at top-right or
@@ -489,11 +490,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!-----Card component----->
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Card</div>
           <div class="component-detail">
             Cards are surfaces that display content and actions on a single
@@ -672,11 +673,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!-----Image component ----->
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Image</div>
           <div class="component-detail">
             Responsive Image Components are used to dsiplay Images on websites,
@@ -739,11 +740,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!-----Input component ----->
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Input</div>
           <div class="component-detail">
             Inputs are necessary for user interaction with the website. Inputs
@@ -788,11 +789,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!----- Snackbar component ----->
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Snackbar</div>
           <div class="component-detail">
             <span class="highlight-text"> Snackbars/Toast </span> inform users
@@ -834,11 +835,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!------ Drawer component ------>
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Drawer</div>
           <div class="component-detail">
             The drawer component is a slide-in element that can be used to
@@ -913,10 +914,10 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!-----Navigation component ----->
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Navigation Bar</div>
           <div class="component-detail">
             Having easy-to-use navigation is important for any web site, With
@@ -962,11 +963,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!-- Modal-popup -->
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Modal</div>
           <div class="component-detail">
             A modal is a dialog
@@ -1004,11 +1005,11 @@
             >
             </iframe>
           </code>
-        </section>
+        </section> -->
 
         <!-----Rating-component----->
 
-        <section class="section">
+        <!-- <section class="section">
           <div class="component-title">Rating</div>
           <div class="component-detail">
             Rating components can be used as read-only badge or in reviews
@@ -1034,7 +1035,7 @@
             sandbox="allow-scripts allow-same-origin"
           >
           </iframe>
-        </section>
+        </section> -->
       </div>
     </main>
   </body>

@@ -42,6 +42,7 @@ ul {
   max-width: 90%;
   border-bottom: 1px solid var(--highlight-color);
   backdrop-filter: blur(5px);
+
   /*for fixed nav  */
 
   position: sticky;
@@ -73,6 +74,20 @@ ul {
   /* gap: 2rem; */
 }
 
+/* hamburger */
+
+.menu-logo {
+  font-size: 1.7rem;
+  color: #9681a0;
+  margin-right: 8px;
+  display: none;
+  cursor: pointer;
+}
+/* showing sideBar */
+.docx-sidebar.show {
+  transform: translateX(0);
+}
+
 /* ---------------sidebar------------------ */
 
 .docx-sidebar {
@@ -85,6 +100,7 @@ ul {
   height: calc(100vh - 3.125rem);
   overflow-y: auto;
   top: 3.2rem;
+  transition: all 0.6s;
 }
 
 .list-topic {
@@ -184,7 +200,6 @@ hr {
 .secondary {
   background-color: #929394;
 }
-
 .error {
   background-color: #f44336;
 }
@@ -198,4 +213,63 @@ hr {
 .img-example {
   width: 10rem;
   height: 20vh;
+}
+
+/* mini-Laptops and tabs */
+@media (max-width: 1071px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 970px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 880px) {
+  .brand-logo {
+    display: none;
+  }
+  .menu-logo {
+    display: inline;
+  }
+  .docx-sidebar {
+    /* hiding sidebar */
+    transform: translateX(-400px);
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    width: 35%;
+  }
+  .docx-nav {
+    background-color: white;
+  }
+  .docx-components {
+    margin-left: 3rem;
+  }
+  .menu-logo {
+    margin-left: 15px;
+  }
+}
+/* large && medium size  */
+@media (max-width: 640px) {
+  .docx-sidebar {
+    width: 45%;
+  }
+  .menu-logo {
+    margin-left: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .menu-logo {
+    margin-left: 34px;
+  }
+}
+/* Smallest size */
+@media (max-width: 390px) {
+  .docx-sidebar {
+    width: 55%;
+    height: 100%;
+  }
 }
