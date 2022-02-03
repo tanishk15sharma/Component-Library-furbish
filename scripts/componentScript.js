@@ -71,3 +71,23 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   modalContainer.classList.remove("showModal");
 });
+
+// --Rating script-- //
+// const ratingIcon = document.querySelector(".rating-icon");
+let ratingIcon = document.querySelectorAll(".rating-icon");
+
+for (let i = 0; i < ratingIcon.length; i++) {
+  ratingIcon[i].addEventListener("click", () => {
+    for (let j = 0; j <= i; j++) {
+      if (!ratingIcon[j].classList.contains("rating-done")) {
+        ratingIcon[j].classList.add("rating-done");
+      }
+    }
+
+    for (let j = i + 1; j < ratingIcon.length; j++) {
+      if (ratingIcon[j].classList.contains("rating-done")) {
+        ratingIcon[j].classList.remove("rating-done");
+      }
+    }
+  });
+}
