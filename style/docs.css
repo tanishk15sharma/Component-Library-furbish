@@ -39,10 +39,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding: 0.5rem 2rem 0.5rem 4.6rem;
   margin: 0 auto;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  max-width: 90%;
+
   border-bottom: 1px solid var(--highlight-color);
   backdrop-filter: blur(3px);
   /* background-color: white; */
@@ -96,7 +95,7 @@ a {
 /* ---------------sidebar------------------ */
 
 .docx-sidebar {
-  padding: 2rem 1rem;
+  padding: 1.8rem 1rem;
   padding-left: 4.5rem;
   width: 40%;
 
@@ -132,16 +131,21 @@ a {
 }
 /*-------------------- main components documentation--------------------- */
 
-.docx-components {
-  padding: 1rem;
-  padding-left: 2rem;
+.docx-div {
+  max-width: 100% !important;
 }
+
+.docx-components {
+  margin-left: 1.5rem;
+}
+
 .section {
   position: relative;
   padding: 1rem 6rem 5rem 3rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
+
   border-radius: 10px;
   box-shadow: 0px 0px 4px 0px var(--highlight-color);
 }
@@ -169,7 +173,7 @@ a {
   top: -4%;
 }
 
-.compone-nt-subhead {
+.component-subhead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -235,14 +239,19 @@ hr {
   html {
     font-size: 90%;
   }
-}
-@media (max-width: 970px) {
-  html {
-    font-size: 80%;
+  .docx-nav {
+    font-size: 100%;
+    padding-left: 2.9rem;
+  }
+  .docx-sidebar {
+    padding-left: 3rem;
+  }
+  .section {
+    padding-left: 3rem;
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 970px) {
   .brand-logo {
     display: none;
   }
@@ -250,67 +259,79 @@ hr {
     display: inline;
   }
   .docx-sidebar {
+    font-size: 130%;
     /* hiding sidebar */
     transform: translateX(-400px);
     position: fixed;
     z-index: 999;
     background-color: white;
     width: 35%;
+    top: 3rem;
   }
   .docx-nav {
     background-color: white;
+    font-size: 150%;
   }
   .docx-components {
     margin-left: 3rem;
   }
   .menu-logo {
-    margin-left: 15px;
+    margin-left: 0.4rem;
+  }
+
+  .component-title {
+    position: static;
+  }
+
+  .section {
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
+
 /* large && medium size  */
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   .docx-sidebar {
+    font-size: 120%;
     width: 45%;
-  }
-  .menu-logo {
-    margin-left: 25px;
-  }
-}
-@media (max-width: 500px) {
-  .menu-logo {
-    margin-left: 34px;
-  }
-  .docx-components {
-    margin-left: 2.3rem;
-  }
-}
-/* Smallest size */
-@media (max-width: 470px) {
-  .docx-nav {
-    margin-left: 3rem;
-    padding-right: 2rem;
-  }
-}
-@media (max-width: 412px) {
-  .docx-sidebar {
-    width: 55%;
-    height: 100%;
+    padding-left: 3.1rem;
+    height: 100vh;
   }
   .section {
-    margin-right: 2rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
-  .docx-nav {
-    margin-left: 6rem;
+  .icon,
+  .menu-logo {
+    font-size: 130%;
   }
 }
-@media (max-width: 380px) {
-  .docx-nav {
-    margin: 0;
-    margin-left: 4rem;
-    border: none;
+
+/*----- for smallest devices -----*/
+@media (max-width: 400px) {
+  html {
+    font-size: 80%;
   }
-  .icon {
-    display: none;
+  .docx-sidebar {
+    font-size: 130%;
+    width: 55%;
+    padding-left: 1.5rem;
+  }
+  .section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .docx-components {
+    margin-left: 1rem !important;
+  }
+  .section {
+    margin-right: 1rem !important;
+  }
+  .menu-logo {
+    margin-left: 0;
+  }
+  .docx-nav {
+    padding-left: 1.5rem;
   }
   .version-sm {
     display: none;
