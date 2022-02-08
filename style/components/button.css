@@ -34,6 +34,18 @@
 .link:hover {
   text-decoration: underline;
 }
+.btn-icon {
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+.btn-icon:hover {
+  background-color: #e7e5e4;
+}
+.fa-trash {
+  font-size: 1.5rem;
+  color: #dc2626;
+}
 
 .btn-large {
   padding: 1rem 3.5rem;
