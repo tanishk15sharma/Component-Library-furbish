@@ -43,8 +43,8 @@ a {
   margin: 0 auto;
 
   border-bottom: 1px solid var(--highlight-color);
-  backdrop-filter: blur(3px);
-  /* background-color: white; */
+  /* backdrop-filter: blur(3px); */
+  background-color: white;
 
   /*for fixed nav  */
 
@@ -132,7 +132,7 @@ a {
 /*-------------------- main components documentation--------------------- */
 
 .docx-div {
-  max-width: 100% !important;
+  min-width: 0;
 }
 
 .docx-components {
@@ -336,4 +336,10 @@ hr {
   .version-sm {
     display: none;
   }
+}
+code {
+  /* border: 1px solid red; */
+  /* max-width: 50%;
+  margin-left: 10rem; */
+  /* display: none; */
 }
