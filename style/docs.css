@@ -155,22 +155,9 @@ a {
   margin-bottom: 1rem;
   background-color: white;
 
-  top: -3%;
+  top: -28px;
   left: 5%;
   z-index: 0;
-}
-/* component title positioning fix */
-.fix {
-  top: -2.5%;
-}
-.fix_down {
-  top: -1%;
-}
-.fix_up {
-  top: -5%;
-}
-.fix_cn {
-  top: -4%;
 }
 
 .component-subhead {
@@ -336,10 +323,4 @@ hr {
   .version-sm {
     display: none;
   }
-}
-code {
-  /* border: 1px solid red; */
-  /* max-width: 50%;
-  margin-left: 10rem; */
-  /* display: none; */
 }
