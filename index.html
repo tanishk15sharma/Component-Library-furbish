@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./style/home.css" />
     <title>furbish UI</title>
   </head>
-  <body>
+  <body class="dark" id="body">
     <nav class="nav-bar">
       <div class="brand">
         <i class="fab fa-pied-piper brand-logo"></i>
@@ -56,6 +56,7 @@
           </button>
         </a>
       </section>
+      <hr class="dotted-line" />
 
       <section class="feat-section">
         <p class="feat-head">Build products, apps and services</p>
@@ -193,5 +194,14 @@
       <strong>COPYRIGHT NOTE </strong>Sponsors logo used in the website is just
       for showcase.
     </p>
+
+    <script>
+      const bodyTag = document.querySelector("#body");
+      const lightBtn = document.querySelector(".fa-sun");
+
+      lightBtn.addEventListener("click", () => {
+        bodyTag.classList.toggle("light");
+      });
+    </script>
   </body>
 </html>
