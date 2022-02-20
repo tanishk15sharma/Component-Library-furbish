@@ -166,7 +166,7 @@ body {
 
   border-radius: 1rem;
   background-color: #fdf4ff;
-  color: var(--background-color);
+  color: var(--secondary-color);
 }
 .feat-img {
   width: 100%;

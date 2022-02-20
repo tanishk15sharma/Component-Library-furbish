@@ -17,6 +17,10 @@
     />
     <link rel="stylesheet" href="/style/docs.css" />
     <script src="./scripts/docs_nav.js" defer></script>
+    <!-- <script
+      src="https://kit.fontawesome.com/e141623122.js"
+      crossorigin="anonymous"
+    ></script> -->
 
     <!-- components css && script file -->
     <link rel="stylesheet" href="./style/components/component.css" />
@@ -26,7 +30,8 @@
   <body>
     <nav class="docx-nav">
       <div class="brand-div">
-        <i class="fas fa-bars menu-logo"></i>
+        <!-- <i class="fas fa-bars menu-logo"></i> -->
+        <i class="fa-solid fa-bars menu-logo"></i>
         <a href="/index.html">
           <i class="fab fa-pied-piper brand-logo"></i>
           <h1 class="brand-name">furbish</h1>
@@ -105,11 +110,12 @@
             </li>
             <li>
               <i class="fas fa-th-large"></i>
-              <a href="#drawer">Drawer</a>
+              <a href="#list">List</a>
             </li>
             <li>
-              <i class="fas fa-bars"></i>
-              <a href="#navigation">navigation bar</a>
+              <i class="far fa-compass"></i>
+
+              <a href="#navigation">Navigation</a>
             </li>
             <li>
               <i class="fas fa-bars"></i>
@@ -124,7 +130,7 @@
               <a href="#rating">Rating</a>
             </li>
             <li>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-grip-horizontal"></i>
               <a href="#grid">Grid</a>
             </li>
           </ul>
@@ -679,18 +685,16 @@
             </code>
           </section>
 
-          <!------ Drawer component ------>
+          <!------ List component ------>
 
           <section class="section">
-            <div class="component-title" id="drawer">Drawer</div>
+            <div class="component-title" id="list">List</div>
             <div class="component-detail">
-              The drawer component is a slide-in element that can be used to
-              display relevant information without losing the context of the
-              page.
+              Lists are continuous, vertical display of text or images.
             </div>
             <div class="flex-head">
-              <div class="component-subhead">Basic Drawer</div>
-              <div class="component-subhead">Side Drawer</div>
+              <div class="component-subhead">Ordered List</div>
+              <div class="component-subhead">Unordered List</div>
             </div>
 
             <div class="flex">
@@ -698,47 +702,51 @@
                 <h2 class="drawer-title">Title</h2>
                 <p class="drawer-subtext">subtext</p>
                 <div class="drawer-nav">
-                  <div class="drawer-links">
-                    <i class="fas fa-archive drawer-icon"></i>
-                    Inbox
-                  </div>
-                  <div class="drawer-links">
-                    <i class="fas fa-star drawer-icon"></i>
-                    Star
-                  </div>
-                  <div class="drawer-links">
-                    <i class="fas fa-paper-plane drawer-icon"></i>
-                    Sent Mail
-                  </div>
-                  <div class="drawer-links">
-                    <i class="fas fa-envelope-open drawer-icon"></i>
-                    Drafts
-                  </div>
+                  <ol>
+                    <li class="drawer-links">
+                      <i class="fas fa-archive drawer-icon"></i>
+                      Inbox
+                    </li>
+                    <li class="drawer-links">
+                      <i class="fas fa-star drawer-icon"></i>
+                      Star
+                    </li>
+                    <li class="drawer-links">
+                      <i class="fas fa-paper-plane drawer-icon"></i>
+                      Sent Mail
+                    </li>
+                    <li class="drawer-links">
+                      <i class="fas fa-envelope-open drawer-icon"></i>
+                      Drafts
+                    </li>
+                  </ol>
                 </div>
               </div>
-
               <!-- For side-drawer; use class="drawer-side-links" on place of class="drawer-links"  -->
 
               <div class="drawer">
                 <h2 class="drawer-title center">Title</h2>
                 <p class="drawer-subtext center">subtext</p>
+
                 <div class="drawer-nav">
-                  <div class="drawer-side-links">
-                    Inbox
-                    <i class="fas fa-archive drawer-icon"></i>
-                  </div>
-                  <div class="drawer-side-links">
-                    Star
-                    <i class="fas fa-star drawer-icon"></i>
-                  </div>
-                  <div class="drawer-side-links">
-                    Sent Mail
-                    <i class="fas fa-paper-plane drawer-icon"></i>
-                  </div>
-                  <div class="drawer-side-links">
-                    Drafts
-                    <i class="fas fa-envelope-open drawer-icon"></i>
-                  </div>
+                  <ul>
+                    <li class="drawer-side-links">
+                      Inbox
+                      <i class="fas fa-archive drawer-icon"></i>
+                    </li>
+                    <li class="drawer-side-links">
+                      Star
+                      <i class="fas fa-star drawer-icon"></i>
+                    </li>
+                    <li class="drawer-side-links">
+                      Sent Mail
+                      <i class="fas fa-paper-plane drawer-icon"></i>
+                    </li>
+                    <li class="drawer-side-links">
+                      Drafts
+                      <i class="fas fa-envelope-open drawer-icon"></i>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -779,7 +787,7 @@
           <!----- slider component ----->
 
           <section class="section">
-            <div class="component-title" id="slider">slider</div>
+            <div class="component-title" id="slider">Slider</div>
 
             <div class="component-detail">
               Sliders allow users to make selections from a range of values.
