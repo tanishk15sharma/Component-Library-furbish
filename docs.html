@@ -17,10 +17,6 @@
     />
     <link rel="stylesheet" href="/style/docs.css" />
     <script src="./scripts/docs_nav.js" defer></script>
-    <!-- <script
-      src="https://kit.fontawesome.com/e141623122.js"
-      crossorigin="anonymous"
-    ></script> -->
 
     <!-- components css && script file -->
     <link rel="stylesheet" href="./style/components/component.css" />
@@ -61,15 +57,15 @@
           <ul class="list-subtopic">
             <li>
               <i class="fas fa-book-open"></i>
-              <a href="#indroduction"> Introduction </a>
+              <a href="#introduction"> Introduction </a>
             </li>
             <li>
               <i class="fas fa-font"></i>
-              <a href="#Typography">Typography</a>
+              <a href="#introduction">Typography</a>
             </li>
             <li>
               <i class="fas fa-palette"></i>
-              <a href="#color"> Colors </a>
+              <a href="#introduction"> Colors </a>
             </li>
           </ul>
         </div>
@@ -110,18 +106,15 @@
             </li>
             <li>
               <i class="fas fa-bars"></i>
-
               <a href="#list">List</a>
             </li>
             <li>
               <i class="fas fa-compass"></i>
-
               <a href="#navigation">Navigation</a>
             </li>
             <li>
               <i class="fas fa-th-large"></i>
-
-              <a href="#sider">Sider</a>
+              <a href="#slider">Slider</a>
             </li>
             <li>
               <i class="fas fa-comment-alt"></i>
@@ -137,7 +130,7 @@
             </li>
             <li>
               <i class="fas fa-heading"></i>
-              <a href="#text utilities">Text utilities</a>
+              <a href="#text-utilities">Text utilities</a>
             </li>
           </ul>
         </div>
@@ -145,7 +138,7 @@
       <div class="docx-div">
         <div class="docx-components">
           <!------Introducation--------->
-          <section class="section" id="indroduction">
+          <section class="section" id="introduction">
             <div class="component-title">Introducation to furbish</div>
             <div class="component-detail">
               Furbish is an open source styling framework, which helps
@@ -177,6 +170,15 @@
               >
               </iframe>
             </code>
+
+            <div class="component-subhead">Furbish's Color Scheme</div>
+            <div class="component-detail">
+              A Webpage must have a good looking, standard and readable font to
+              make it's content attractive to the end user.
+              <strong>Open Sans</strong> is the font property which is used by
+              Furbish. It is available on Google Fonts for free. The font weight
+              varies from 500 to 700 based on importance of the content.
+            </div>
 
             <hr />
 
@@ -727,8 +729,8 @@
                     </li>
                   </ol>
                 </div>
+                <!-- For unordered-list; just change <ol> </ol> to <ul> </ul>  -->
               </div>
-              <!-- For side-drawer; use class="drawer-side-links" on place of class="drawer-links"  -->
 
               <div class="drawer">
                 <h2 class="drawer-title center">Title</h2>
@@ -828,6 +830,10 @@
                 <label class="input" for="input">Item 5</label>
               </div>
             </div>
+
+            <code>
+              <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ftanishk15sharma%2FComponent-library-furbish%2Fblob%2Fdevelopment%2Fdocs.html%23L784-L797&style=vs2015&showCopy=on"></script>
+            </code>
           </section>
 
           <!-- Modal-popup -->
@@ -887,49 +893,66 @@
               having to use floats and positioning.
             </div>
             <div class="component-subhead">grid-2: Two items in a grid</div>
-
+            <!-- Two items grid-->
             <div class="grid-col-2">
               <div>child 1</div>
               <div>child 2</div>
             </div>
             <div class="component-subhead">grid-3: Two items in a grid</div>
 
+            <!-- Three items grid-->
             <div class="grid-col-3">
               <div>child 1</div>
               <div>child 2</div>
               <div>child 3</div>
             </div>
+
+            <code>
+              <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ftanishk15sharma%2FComponent-library-furbish%2Fblob%2Fdevelopment%2Fdocs.html%23L811-L816&style=vs2015&showCopy=on"></script>
+            </code>
           </section>
 
           <!-----Text utilities----->
           <section class="section">
-            <div class="component-title" id="grid">Text utilities</div>
+            <div class="component-title" id="text-utilities">
+              Text utilities
+            </div>
             <div class="component-detail">
               Documentation and examples for common text utilities to control
               alignment, wrapping, weight, and more.
             </div>
             <div class="component-subhead">Headings</div>
-
-            <h1>H1 - Heading</h1>
-            <h2>H2 - Heading</h2>
-            <h3>H3 - Heading</h3>
-            <h4>H4 - Heading</h4>
-            <h5>H5 - Heading</h5>
-            <h6>H6 - Heading</h6>
+            <div class="text-container">
+              <h1>H1 - Heading</h1>
+              <h2>H2 - Heading</h2>
+              <h3>H3 - Heading</h3>
+              <h4>H4 - Heading</h4>
+              <h5>H5 - Heading</h5>
+              <h6>H6 - Heading</h6>
+            </div>
+            <code>
+              <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ftanishk15sharma%2FComponent-library-furbish%2Fblob%2Fdevelopment%2Fdocs.html%23L784-L797&style=vs2015&showCopy=on"></script>
+            </code>
             <div class="component-subhead">Text sizes</div>
-
-            <p class="txt-sm">This is small text.</p>
-
-            <p class="txt-md">This is medium text.</p>
-
-            <p class="txt-lg">This is large text.</p>
-            <p class="txt-xl">This is extra large text.</p>
-
+            <div class="text-container">
+              <p class="txt-sm">This is small text.</p>
+              <p class="txt-md">This is medium text.</p>
+              <p class="txt-lg">This is large text.</p>
+              <p class="txt-xl">This is extra large text.</p>
+            </div>
+            <code>
+              <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ftanishk15sharma%2FComponent-library-furbish%2Fblob%2Fdevelopment%2Fdocs.html%23L784-L797&style=vs2015&showCopy=on"></script>
+            </code>
             <div class="component-subhead">Text alignment</div>
+            <div class="text-container">
+              <p class="txt-start">Text alignment start</p>
+              <p class="txt-center">Text alignment center</p>
+              <p class="txt-end">Text alignment end</p>
+            </div>
 
-            <p class="txt-start">Text alignment start</p>
-            <p class="txt-center">Text alignment center</p>
-            <p class="txt-end">Text alignment end</p>
+            <code>
+              <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ftanishk15sharma%2FComponent-library-furbish%2Fblob%2Fdevelopment%2Fdocs.html%23L784-L797&style=vs2015&showCopy=on"></script>
+            </code>
           </section>
         </div>
       </div>
