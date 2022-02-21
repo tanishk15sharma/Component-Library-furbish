@@ -56,9 +56,10 @@ Import JS to add interactivity in your web app
 #### Demo
 - Desktop View![componentlib](https://user-images.githubusercontent.com/90030549/155008118-e35a0e4c-53ec-43ee-a0d1-8274551a68cf.gif)
 
-- Mobile View
+- Responsive view 
+![componentLibphone](https://user-images.githubusercontent.com/90030549/155009004-29710b94-3526-4465-a808-0dbe17ebf1ce.gif)
 
 
-#### Feedback
-Feel free to raise an Issue if you find any, or  mail them to [tanishk158sharma@gmail.com](mailto:tanishk158sharma@gmail.com)
+#### Feedback and suggestions
+mail to [tanishk158sharma@gmail.com](mailto:tanishk158sharma@gmail.com)
 
