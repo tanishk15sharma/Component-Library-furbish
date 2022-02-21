@@ -2,7 +2,9 @@
 # FURBISH 
 
 Furbish UI is a simple, modular and accessible component library that gives you the building blocks you need to build your website applications.
-
+```
+https://furbish.netlify.app/index.html
+```
 #### Features
 
 - Responsive components
