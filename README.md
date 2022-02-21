@@ -54,7 +54,7 @@ Import JS to add interactivity in your web app
 - JavaScript
 
 #### Demo
-- Desktop View
+- Desktop View![componentlib](https://user-images.githubusercontent.com/90030549/155008118-e35a0e4c-53ec-43ee-a0d1-8274551a68cf.gif)
 
 - Mobile View
 
